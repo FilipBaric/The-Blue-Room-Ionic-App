@@ -1,0 +1,26 @@
+{
+    "HOME":{
+        "FROM": "From",
+        "TO": "to",
+        "SELECT": "Change language",
+        "THE-BLUE-ROOM": "The Blue Room",
+        "BOOK": "Book your time"
+    },
+    "POPUP":{
+        "AT": "at",
+        "SAVE": "Save",
+        "NAME": "Name"
+    },
+    "ALTPOPUP":{
+        "AT": "at",
+        "NAME": "Name",
+        "SELECTTIME": "Select time",
+        "UPDATE": "Update",
+        "DELETE": "Delete"
+    },
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday", 
+    "Friday":"Friday"
+}

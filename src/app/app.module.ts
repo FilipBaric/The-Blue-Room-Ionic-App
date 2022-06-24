@@ -33,6 +33,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { IonicModule } from '@ionic/angular';
 
 registerLocaleData(en);
 
@@ -80,6 +81,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AngularFireDatabaseModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase()),
+    IonicModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

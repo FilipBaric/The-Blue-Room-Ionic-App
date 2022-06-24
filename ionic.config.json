@@ -1,0 +1,12 @@
+{
+  "defaultProject": "the-blue-room",
+  "projects": {
+    "the-blue-room": {
+      "name": "the-blue-room",
+      "integrations": {
+        "cordova": {}
+      },
+      "type": "angular"
+    }
+  }
+}
