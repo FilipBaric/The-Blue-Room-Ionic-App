@@ -1,0 +1,26 @@
+{
+    "HOME":{
+        "FROM": "Aus",
+        "TO": "zu",
+        "SELECT": "Sprache ändern",
+        "THE-BLUE-ROOM": "Das Blaue Zimmer",
+        "BOOK": "Buchen Sie Ihre Zeit"
+    },
+    "POPUP":{
+        "AT": "um",
+        "SAVE": "Speichern",
+        "NAME": "Name"
+    },
+    "ALTPOPUP":{
+        "AT": "um",
+        "NAME": "Name",
+        "SELECTTIME": "Zeit auswählen",
+        "UPDATE": "Aktualisieren",
+        "DELETE": "Löschen"
+    },
+    "Monday": "Montag",
+    "Tuesday": "Dienstag",
+    "Wednesday": "Mittwoch",
+    "Thursday": "Donnerstag", 
+    "Friday":"Freitag"
+}

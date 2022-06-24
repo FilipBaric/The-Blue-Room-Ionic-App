@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "the-blue-room-91c63"
+  },
+  "targets": {
+    "the-blue-room-91c63": {
+      "hosting": {
+        "the-blue-room": [
+          "the-blue-room-91c63"
+        ]
+      }
+    }
+  }
+}

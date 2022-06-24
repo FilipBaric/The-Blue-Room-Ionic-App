@@ -1,0 +1,52 @@
+<h2 mat-dialog-title i18n>
+  {{ data.day | translate }} {{ "ALTPOPUP.AT" | translate }} {{ data.time }}
+</h2>
+<button
+  class="close"
+  mat-button
+  (click)="close()"
+  style="padding: 10px; border: none; background: none"
+>
+  X
+</button>
+<div [formGroup]="altPopupForm">
+  <mat-dialog-content>
+    <mat-form-field>
+      <label>{{ "ALTPOPUP.NAME" | translate }}</label>
+      <input matInput formControlName="name" i18n />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>{{ "ALTPOPUP.SELECTTIME" | translate }}</mat-label>
+      <mat-select formControlName="time">
+        <mat-option *ngFor="let time of times" [value]="time.value">{{
+          time.value
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-dialog-content>
+</div>
+<mat-dialog-actions>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="updateRequest()"
+    style="background-color: #b8ba91"
+  >
+    <mat-icon *ngIf="isLoading1"
+      ><mat-spinner color="accent" diameter="20"></mat-spinner
+    ></mat-icon>
+    {{ "ALTPOPUP.UPDATE" | translate }}
+  </button>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="deleteRequest()"
+    style="background-color: red"
+  >
+    <mat-icon *ngIf="isLoading2"
+      ><mat-spinner color="accent" diameter="20"> </mat-spinner
+    ></mat-icon>
+    {{ "ALTPOPUP.DELETE" | translate }}
+  </button>
+</mat-dialog-actions>

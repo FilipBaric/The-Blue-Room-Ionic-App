@@ -1,0 +1,54 @@
+<div class="bg-container">
+  <div>
+    <mat-toolbar>
+      <div style="display: inline-block">
+        <mat-icon style="margin-right: 30px"
+          ><img class="img-color" src="../assets/img/icons8-room-48.png"
+        /></mat-icon>
+        <span style="color: #ffffff">{{
+          "HOME.THE-BLUE-ROOM" | translate
+        }}</span>
+      </div>
+      <div style="text-align: right; display: inline-block; width: 100%">
+        <button mat-button (click)="setLanguage('English')">
+          <span class="fi fi-gb"></span>
+        </button>
+        <button mat-button (click)="setLanguage('Hrvatski')">
+          <span class="fi fi-hr"></span>
+        </button>
+        <button mat-button (click)="setLanguage('Deutsch')">
+          <span class="fi fi-de"></span>
+        </button>
+      </div>
+    </mat-toolbar>
+  </div>
+  <br />
+  <div class="centering-div">
+    <div class="inner-container">
+      <mat-card>
+        <mat-card-title>{{ "HOME.BOOK" | translate }}</mat-card-title>
+        <mat-card-content
+          ><table class="table-style">
+            <thead>
+              <tr>
+                <th></th>
+                <th *ngFor="let day of days">{{ day.day | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let time of times">
+                <td>{{ time.value }}</td>
+                <td
+                  *ngFor="let day of days"
+                  (click)="openBookModal(day, time.value)"
+                >
+                  {{ getPersonBooked(day, time.value) }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+
+.table-style{
+  height: 75%; 
+  margin:auto;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  border-collapse: collapse;
+
+}
+
+::ng-deep body{
+  background-color: #FFF1D0;
+}
+
+.table-style thead tr{
+  background-color: #001D6E;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centering-div{
+  display: flex;
+  justify-content: center;
+}
+
+.mat-toolbar{
+  background-color: #0e87b3;
+  opacity: 90%;
+}
+
+.inner-container {
+  width: 80%;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.img-color{
+  filter: brightness(0) invert(1);
+}
+
+.bg-container {
+  background-image: url("../assets/img/Optimized-wallpaperuse.com-cool-room-wallpaper-388967.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  height: 100%;
+}
+
+.mat-card-title{
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mat-card{
+  background-color: transparent;
+}
+
+.table-style th,
+.table-style td {
+    text-align: center;
+    border: 2px solid;
+    padding: 12px 15px;
+    border-top: 10px;
+    border-bottom: 10px;
+}
+
+.table-style tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+.table-style tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table-style tbody tr:last-of-type {
+  border-bottom: 0px;
+}
+
+.table-style tbody tr.active-row {
+  font-weight: bold;
+  color: #1b98e0;
+}
+
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+}
+
+

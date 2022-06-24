@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>
+  {{ data.day | translate }} {{ "POPUP.AT" | translate }} {{ data.time }}
+</h2>
+<button
+  class="close"
+  mat-button
+  (click)="close()"
+  style="padding: 10px; border: none; background: none"
+>
+  X
+</button>
+<mat-dialog-content>
+  <mat-form-field [formGroup]="popupForm">
+    <input
+      matInput
+      placeholder="{{ 'POPUP.NAME' | translate }}"
+      formControlName="name"
+    />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: space-between">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="createPost()"
+    [disabled]="isLoading"
+  >
+    <mat-icon *ngIf="isLoading"
+      ><mat-spinner color="accent" diameter="20"> </mat-spinner
+    ></mat-icon>
+    {{ "POPUP.SAVE" | translate }}
+  </button>
+</mat-dialog-actions>
